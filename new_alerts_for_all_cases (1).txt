@@ -1,0 +1,142 @@
+groups:
+  - name: all_cases_rules
+    rules:
+      - alert: normalQueryError
+        expr: NORMAL_QUERY_ERROR > 0
+        for: 10s
+        labels:
+          severity: "warning"
+        annotations:
+          summary: 'Normal querying error alert'
+          description: '{{$labels.job}}'
+          identifier: '{{$labels.instance}}'
+
+      - alert: regexQueryError
+        expr: REGEX_QUERY_ERROR > 0
+        for: 10s
+        labels:
+          severity: "warning"
+        annotations:
+          summary: 'Regex querying error alert'
+          description: '{{$labels.job}}'
+          identifier: '{{$labels.instance}}'
+
+      - alert: normalQueryWarn
+        expr: NORMAL_QUERY_WARN > 0
+        for: 10s
+        labels:
+          severity: "warning"
+        annotations:
+          summary: 'Normal querying warning alert'
+          description: '{{$labels.job}}'
+          identifier: '{{$labels.instance}}'
+
+      - alert: regexQueryWarn
+        expr: REGEX_QUERY_WARN > 0
+        for: 10s
+        labels:
+          severity: "warning"
+        annotations:
+          summary: 'Regex querying warning alert'
+          description: '{{$labels.job}}'
+          identifier: '{{$labels.instance}}'
+
+      - alert: normalQueryWarning
+        expr: NORMAL_QUERY_WARNING > 0
+        for: 10s
+        labels:
+          severity: "warning"
+        annotations:
+          summary: 'Normal querying warning alert'
+          description: '{{$labels.job}}'
+          identifier: '{{$labels.instance}}'
+
+      - alert: regexQueryWarning
+        expr: REGEX_QUERY_WARNING > 0
+        for: 10s
+        labels:
+          severity: "warning"
+        annotations:
+          summary: 'Regex querying warning alert'
+          description: '{{$labels.job}}'
+          identifier: '{{$labels.instance}}'
+
+      - alert: normalQueryCritical
+        expr: NORMAL_QUERY_CRITICAL > 0
+        for: 10s
+        labels:
+          severity: "critical"
+        annotations:
+          summary: 'Normal querying critical alert'
+          description: '{{$labels.job}}'
+          identifier: '{{$labels.instance}}'
+
+      - alert: regexQueryCritical
+        expr: REGEX_QUERY_CRITICAL > 0
+        for: 10s
+        labels:
+          severity: "critical"
+        annotations:
+          summary: 'Regex querying critical alert'
+          description: '{{$labels.job}}'
+          identifier: '{{$labels.instance}}'
+
+      - alert: normalQueryInfo
+        expr: NORMAL_QUERY_INFO > 0
+        for: 10s
+        labels:
+          severity: "info"
+        annotations:
+          summary: 'Normal querying info alert'
+          description: '{{$labels.job}}'
+          identifier: '{{$labels.instance}}'
+
+      - alert: regexQueryInfo
+        expr: REGEX_QUERY_INFO > 0
+        for: 10s
+        labels:
+          severity: "info"
+        annotations:
+          summary: 'Regex querying info alert'
+          description: '{{$labels.job}}'
+          identifier: '{{$labels.instance}}'
+
+      - alert: normalQueryFatal
+        expr: NORMAL_QUERY_FATAL > 0
+        for: 10s
+        labels:
+          severity: "fatal"
+        annotations:
+          summary: 'Normal querying fatal alert'
+          description: '{{$labels.job}}'
+          identifier: '{{$labels.instance}}'
+
+      - alert: regexQueryFatal
+        expr: REGEX_QUERY_FATAL > 0
+        for: 10s
+        labels:
+          severity: "fatal"
+        annotations:
+          summary: 'Regex querying fatal alert'
+          description: '{{$labels.job}}'
+          identifier: '{{$labels.instance}}'
+
+      - alert: normalQueryFailure
+        expr: NORMAL_QUERY_FAILURE > 0
+        for: 10s
+        labels:
+          severity: "failure"
+        annotations:
+          summary: 'Normal querying failure alert'
+          description: '{{$labels.job}}'
+          identifier: '{{$labels.instance}}'
+
+      - alert: regexQueryFailure
+        expr: REGEX_QUERY_FAILURE > 0
+        for: 10s
+        labels:
+          severity: "failure"
+        annotations:
+          summary: 'Regex querying failure alert'
+          description: '{{$labels.job}}'
+          identifier: '{{$labels.instance}}'

@@ -1,0 +1,184 @@
+[
+  {
+    "id": "alert_error_normal",
+    "metric_name": "NORMAL_QUERY_ERROR",
+    "query": "{} |= \"ERROR\"",
+    "enrich_with_keys": [
+      "time",
+      "app_id"
+    ],
+    "enrich_with_keyvalues": {
+      "category": "WARNING",
+      "reason": "exact match querying"
+    }
+  },
+  {
+    "id": "alert_error_regex",
+    "metric_name": "REGEX_QUERY_ERROR",
+    "query": "{} |~ \"ERROR\"",
+    "enrich_with_keys": [
+      "time",
+      "app_id"
+    ],
+    "enrich_with_keyvalues": {
+      "category": "WARNING",
+      "reason": "regex querying"
+    }
+  },
+  {
+    "id": "alert_warn_normal",
+    "metric_name": "NORMAL_QUERY_WARN",
+    "query": "{} |= \"WARN\"",
+    "enrich_with_keys": [
+      "time",
+      "app_id"
+    ],
+    "enrich_with_keyvalues": {
+      "category": "WARNING",
+      "reason": "normal querying"
+    }
+  },
+  {
+    "id": "alert_warn_regex",
+    "metric_name": "REGEX_QUERY_WARN",
+    "query": "{} |~ \"WARN\"",
+    "enrich_with_keys": [
+      "time",
+      "app_id"
+    ],
+    "enrich_with_keyvalues": {
+      "category": "WARNING",
+      "reason": "regex querying"
+    }
+  },
+  {
+    "id": "alert_warning_normal",
+    "metric_name": "NORMAL_QUERY_WARNING",
+    "query": "{} |= \"WARNING\"",
+    "enrich_with_keys": [
+      "time",
+      "app_id"
+    ],
+    "enrich_with_keyvalues": {
+      "category": "WARNING",
+      "reason": "normal querying"
+    }
+  },
+  {
+    "id": "alert_warning_regex",
+    "metric_name": "REGEX_QUERY_WARNING",
+    "query": "{} |~ \"WARNING\"",
+    "enrich_with_keys": [
+      "time",
+      "app_id"
+    ],
+    "enrich_with_keyvalues": {
+      "category": "WARNING",
+      "reason": "regex querying"
+    }
+  },
+  {
+    "id": "alert_critical_normal",
+    "metric_name": "NORMAL_QUERY_CRITICAL",
+    "query": "{} |= \"CRITICAL\"",
+    "enrich_with_keys": [
+      "time",
+      "app_id"
+    ],
+    "enrich_with_keyvalues": {
+      "category": "CRITICAL",
+      "reason": "normal querying"
+    }
+  },
+  {
+    "id": "alert_critical_regex",
+    "metric_name": "REGEX_QUERY_CRITICAL",
+    "query": "{} |~ \"CRITICAL\"",
+    "enrich_with_keys": [
+      "time",
+      "app_id"
+    ],
+    "enrich_with_keyvalues": {
+      "category": "CRITICAL",
+      "reason": "regex querying"
+    }
+  },
+  {
+    "id": "alert_info_normal",
+    "metric_name": "NORMAL_QUERY_INFO",
+    "query": "{} |= \"INFO\"",
+    "enrich_with_keys": [
+      "time",
+      "app_id"
+    ],
+    "enrich_with_keyvalues": {
+      "category": "INFO",
+      "reason": "normal querying"
+    }
+  },
+  {
+    "id": "alert_critical_regex",
+    "metric_name": "REGEX_QUERY_INFO",
+    "query": "{} |~ \"INFO\"",
+    "enrich_with_keys": [
+      "time",
+      "app_id"
+    ],
+    "enrich_with_keyvalues": {
+      "category": "INFO",
+      "reason": "regex querying"
+    }
+  },
+  {
+    "id": "alert_fatal_normal",
+    "metric_name": "NORMAL_QUERY_FATAL",
+    "query": "{} |= \"FATAL\"",
+    "enrich_with_keys": [
+      "time",
+      "app_id"
+    ],
+    "enrich_with_keyvalues": {
+      "category": "FATAL",
+      "reason": "normal querying"
+    }
+  },
+  {
+    "id": "alert_fatal_regex",
+    "metric_name": "REGEX_QUERY_FATAL",
+    "query": "{} |~ \"FATAL\"",
+    "enrich_with_keys": [
+      "time",
+      "app_id"
+    ],
+    "enrich_with_keyvalues": {
+      "category": "FATAL",
+      "reason": "regex querying"
+    }
+  },
+  {
+    "id": "alert_failure_normal",
+    "metric_name": "NORMAL_QUERY_FAILURE",
+    "query": "{} |= \"FAILURE\"",
+    "enrich_with_keys": [
+      "time",
+      "app_id"
+    ],
+    "enrich_with_keyvalues": {
+      "category": "FAILURE",
+      "reason": "normal querying"
+    }
+  },
+  {
+    "id": "alert_failure_regex",
+    "metric_name": "REGEX_QUERY_FAILURE",
+    "query": "{} |~ \"FAILURE\"",
+    "enrich_with_keys": [
+      "time",
+      "app_id"
+    ],
+    "enrich_with_keyvalues": {
+      "category": "FAILURE",
+      "reason": "regex querying"
+    }
+  }
+]
